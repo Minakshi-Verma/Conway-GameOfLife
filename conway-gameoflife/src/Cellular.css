@@ -5,3 +5,23 @@
     background-image: linear-gradient(#333 1px, transparent 1px),
     linear-gradient(90deg, #333 1px, transparent 3px);
   }
+
+  .controls{
+    padding:2.5%;
+    display:flex;
+    justify-content: space-evenly;
+    padding:2%;   
+  }
+  .updateInput{
+      /* margin-left:4%; */
+      padding-left:22.5%;
+  }
+  .buttons{
+    width:40%;
+  }
+  .button{
+    margin:1%;
+    background-color:#dfdfe7;
+    border: black 1px solid;
+    border-radius:5px;
+  }

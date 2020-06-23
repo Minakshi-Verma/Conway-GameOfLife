@@ -33,6 +33,29 @@ class Cellular extends React.Component {
             <Cell x={cell.x} y={cell.y} key={`${cell.x}, ${cell.y}`} />
           ))}       
         </div>
+
+     
+
+        <div className="controls">
+          <div className="updateInput">
+            Update every
+            <input
+            />
+            msec
+          </div>
+          <div className="buttons">        
+            <button className="button">
+              Stop
+            </button>          
+            <button className="button" >
+              Run
+            </button>     
+            
+            <button className="button">
+            Clear
+            </button>
+          </div>
+        </div>
                
       </div>
     )
