@@ -10,18 +10,36 @@
     padding:2.5%;
     display:flex;
     justify-content: space-evenly;
-    padding:2%;   
+    padding:2%; 
+    font-size:15px;   
   }
-  .updateInput{
-      /* margin-left:4%; */
-      padding-left:22.5%;
+  .updateInput{    
+      padding-left:18.5%;       
   }
+
   .buttons{
-    width:40%;
+    width:50%;
+    margin-right: 3%;
   }
   .button{
     margin:1%;
     background-color:#dfdfe7;
     border: black 1px solid;
-    border-radius:5px;
+    border-radius:5px;   
+    font-size:15px; 
+  }
+  .button:hover{
+      background-color:#0a0a2e;    
+      color:#b8cf77;
+  }
+  .input{
+      margin:2%;
+      width: 25%;
+      
+  }
+  .Cell {
+    background: #ccc;
+    background-color: #b8cf77;
+    /* background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%); */
+    position: absolute;
   }

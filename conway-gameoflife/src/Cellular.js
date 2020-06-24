@@ -75,6 +75,7 @@ makeEmptyAutomaton(){
   render() {
     const { cells, interval, isRunning } = this.state;
     return (
+        // Adds the board
       <div>      
         <div
           className="Twodspace"
@@ -94,14 +95,14 @@ makeEmptyAutomaton(){
           ))}       
         </div>
 
-        {/* ------- */}
+        {/* ----Adds the controls--- */}
 
         <div className="controls">
           <div className="updateInput">
             Update every 
-            <input
+            <input className= "input"
             value={this.interval}
-            
+            onChange={this.handleIntervalChange}            
             />
             msec           
           </div>
@@ -121,11 +122,7 @@ makeEmptyAutomaton(){
             Clear
             </button>
           </div> 
-        </div>
-
-
-       
-               
+        </div>               
       </div>
     )
   }

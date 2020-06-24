@@ -9,10 +9,10 @@ const Header = ()=>{
                 <h1>Conway: Game of life</h1>
             </div>
             <div>
-                <Link className = "link link1" to = {"/about"}>About</Link>
-            </div>
+                <Link className = "link link1" to = {"/about"}><strong>About</strong></Link>
+            </div>          
             <div>
-                <Link className = "link" to = {"/game"}>Game</Link>
+                <Link className = "link" to = {"/game"}><strong>Game</strong></Link>
             </div>
             
         </div>
