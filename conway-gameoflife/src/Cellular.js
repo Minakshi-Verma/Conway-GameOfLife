@@ -34,8 +34,8 @@ makeEmptyAutomaton(){
 //   Add makeCells function to create newcells
   makeCells() {
     let cells = [];
-    for (let y = 0; y < this.cols; y++) {
-      for (let x = 0; x < this.rows; x++) {
+    for (let y = 0; y < this.rows; y++) {
+      for (let x = 0; x < this.cols; x++) {
         if (this.automaton[y][x]) {
           cells.push({ x, y });
         }
