@@ -8,6 +8,7 @@ const Header = ()=>{
             <div>
                 <h1>Conway: Game of life</h1>
             </div>
+              
             <div>
                 <Link className = "link link1" to = {"/about"}><strong>About</strong></Link>
             </div>          

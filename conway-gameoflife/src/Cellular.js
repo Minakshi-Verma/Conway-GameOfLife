@@ -84,6 +84,25 @@ runIteration() {
     }, this.state.interval);
 }
 
+
+//onclick handlers to start the game
+
+    runGame = () => {
+        this.setState({ isRunning: true });
+        this.runIteration();
+    };
+
+//onclick handlers to stop the game
+
+    stopGame = () => {
+        this.setState({ isRunning: false });
+        if (this.timeoutHandler) {
+        window.clearTimeout(this.timeoutHandler);
+        this.timeoutHandler = null;
+        }
+    }
+
+
 //calculate the number of Neighbor cells at point x and y 
 
     calculateNeighbors(automaton, x, y){
@@ -101,8 +120,6 @@ runIteration() {
 
         return neighbors
     }
-
-
 
 //  Add onchange handler 
     handleClick = (e) => {

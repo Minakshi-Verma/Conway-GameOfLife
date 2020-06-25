@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 import{BrowserRouter as Router} from 'react-router-dom';
 import About from './About'
 import Header from './Header'
+import Home from './Header'
 import './App.css';
 
 
@@ -16,6 +17,7 @@ function App() {
         <Route path = "/">
           <Header />
         </Route>
+
 
         <Route path = "/about">
           <About />
