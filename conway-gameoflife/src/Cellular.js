@@ -16,7 +16,7 @@ class Cellular extends React.Component {
 
   state = {
     cells: [],
-    interval:150,
+    interval:100,
     isRunning: false 
   } 
 
@@ -84,7 +84,10 @@ runIteration() {
     }, this.state.interval);
 }
 
-
+//onclick handler to update the simulation speed
+handleIntervalChange = (event) => {
+    this.setState({ interval: event.target.value });
+}
 //onclick handlers to start the game
 
     runGame = () => {
