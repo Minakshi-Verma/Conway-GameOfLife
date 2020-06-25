@@ -16,7 +16,7 @@ class Cellular extends React.Component {
 
   state = {
     cells: [],
-    interval:50,
+    interval:200,
     isRunning: false 
   } 
 
@@ -102,6 +102,13 @@ runIteration() {
         }
     }
 
+ // onClick handler to clear the game board
+
+    clearGame = () => {
+        this.automaton = this.makeEmptyAutomaton();
+        this.setState({ cells: this.makeCells() });
+    }   
+
 
 //calculate the number of Neighbor cells at point x and y 
 
@@ -166,7 +173,7 @@ runIteration() {
           <div className="updateInput">
             Update every 
             <input className= "input"
-            value={this.interval}
+            value={this.state.interval}
             onChange={this.handleIntervalChange}            
             />
             msec           
