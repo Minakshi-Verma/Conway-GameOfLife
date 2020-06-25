@@ -16,7 +16,7 @@ class Cellular extends React.Component {
 
   state = {
     cells: [],
-    interval:200,
+    interval:150,
     isRunning: false 
   } 
 
@@ -102,12 +102,24 @@ runIteration() {
         }
     }
 
- // onClick handler to clear the game board
+// onClick handler to clear the game board
 
     clearGame = () => {
         this.automaton = this.makeEmptyAutomaton();
         this.setState({ cells: this.makeCells() });
     }   
+
+
+// onclick handler to generate randomGame on the board
+    randomGame = () => {
+        for (let y = 0; y < this.rows; y++) {
+            for (let x = 0; x < this.cols; x++) {
+                this.automaton[y][x] = (Math.random() >= 0.5);
+            }
+        }
+
+        this.setState({ cells: this.makeCells() });
+    }
 
 
 //calculate the number of Neighbor cells at point x and y 
@@ -159,8 +171,7 @@ runIteration() {
           onClick={this.handleClick}
           ref={(n) => {
             this.automatonRef = n;
-          }}
-      
+          }}      
         >
           {cells.map((cell) => (
             <Cell x={cell.x} y={cell.y} key={`${cell.x}, ${cell.y}`} />
@@ -175,7 +186,7 @@ runIteration() {
             <input className= "input"
             value={this.state.interval}
             onChange={this.handleIntervalChange}            
-            />
+            />{" "}
             msec           
           </div>
           <div className="buttons"> 
@@ -186,12 +197,13 @@ runIteration() {
             ) : (          
             <button className="button" onClick={this.runGame} >
               Run
-            </button>
-             
-            )}                     
-         
+            </button>             
+            )} 
+            <button className="button" onClick={this.randomGame} >
+              Random
+            </button>        
             <button className="button" onClick={this.clearGame} >
-            Clear
+              Clear
             </button>
           </div> 
         </div>               
