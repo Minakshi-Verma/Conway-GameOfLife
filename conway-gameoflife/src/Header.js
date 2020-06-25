@@ -5,12 +5,14 @@ import "./Header.css"
 const Header = ()=>{
     return(
         < div className ="header">
-            <div>
+            {/* <div>
                 <h1>Conway: Game of life</h1>
-            </div>
-              
+            </div> */}
             <div>
-                <Link className = "link link1" to = {"/about"}><strong>About</strong></Link>
+                <Link className = "link" to = {"/home"}><strong>Home</strong></Link>
+            </div>    
+            <div>
+                <Link className = "link" to = {"/about"}><strong>About</strong></Link>
             </div>          
             <div>
                 <Link className = "link" to = {"/game"}><strong>Game</strong></Link>
