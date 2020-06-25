@@ -171,7 +171,7 @@ runIteration() {
 
         <div className="controls">
           <div className="updateInput">
-            Update every 
+            Update every{" "}
             <input className= "input"
             value={this.state.interval}
             onChange={this.handleIntervalChange}            
