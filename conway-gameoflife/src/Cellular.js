@@ -56,10 +56,38 @@ makeEmptyAutomaton(){
     };
   }
 
+// adding runIteration function to set the game-rules of neighbors allowed
+runIteration() {
+    let newAutomaton = this.makeEmptyAutomaton()
+
+    for (let y = 0; y < this.rows; y++) {
+        for (let x = 0; x < this.cols; x++) {
+            let neighbors = this.calculateNeighbors(this.automaton, x, y);
+            if (this.automaton[y][x]) {
+                if (neighbors === 2 || neighbors === 3) {
+                    newAutomaton[y][x] = true;
+                } else {
+                    newAutomaton[y][x] = false;
+                }
+            } else {
+                if (!this.automaton[y][x] && neighbors === 3) {
+                    newAutomaton[y][x] = true;
+                }
+            }
+        }
+    }
+    this.automaton = newAutomaton;
+    this.setState({ cells: this.makeCells() });
+
+    this.timeoutHandler = window.setTimeout(() => {
+        this.runIteration();
+    }, this.state.interval);
+}
 
 //calculate the number of Neighbor cells at point x and y 
-    calculateNeighbors(automaton, x, y) {
-        let neighbors = 0;
+
+    calculateNeighbors(automaton, x, y){
+        let neighbors = 0
         const dirs = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1]];
         for (let i = 0; i < dirs.length; i++) {
             const dir = dirs[i];
@@ -67,7 +95,7 @@ makeEmptyAutomaton(){
             let x1 = x + dir[1];
 
             if (x1 >= 0 && x1 < this.cols && y1 >= 0 && y1 < this.rows && automaton[y1][x1]) {
-                neighbors++;
+                neighbors++
             }
         }
 
