@@ -4,42 +4,50 @@
     background-color: #0a0a2e;     
     background-image: linear-gradient(#333 1px, transparent 1px),
     linear-gradient(90deg, #333 1px, transparent 3px);
+    border-radius:18px 18px 0px 0px;
   }
 
   .controls{
     padding:2.5%;
+    background-image: linear-gradient(315deg, #dfdfe7 0%, #9C1512 74%);
     display:flex;
     justify-content: space-evenly;
     padding:2%; 
-    font-size:15px;   
+    font-size:18px;
+    font-weight: 600;
+    border: 2px #0a0a2e solid; 
+    border-radius:0px 0px 18px 18px;
+    margin: 0 auto;
+    width: 52.6%;
+    color:white
   }
-  .updateInput{    
-      padding-left:18.5%;       
-  }
-
+ 
   .buttons{
-    width:50%;
-    margin-right: 3%;
+    width:50%;  
   }
   .button{
-    margin:1%;
-    background-color:#dfdfe7;
-    border: black 1px solid;
-    border-radius:5px;   
-    font-size:15px; 
+    width:15%;
+    margin:1.5%;    
+    color: white;
+    background-color:#0a0a2e;
+    border:white 1px solid;
+    border-radius:8px;   
+    font-size:15px;
+    padding: 0.8%; 
   }
   .button:hover{
-      background-color:#97140A;    
-      color:white;
+   width:18%;
+   background-color:#97140A;    
+   color:white;
+   padding:1.2%;
+   border-radius:8px;   
   }
-  .input{
-      margin:2%;
-      width: 25%;
-      
+  .input{    
+    margin:2%;
+    width: 25%;     
   }
-  .Cell {
-    
+  .Cell {    
     background-color: #97140A;
-    background-image: linear-gradient(315deg, #dfdfe7 0%, #97140A 84%);
+    background-image: linear-gradient(315deg, #dfdfe7 0%, #9C1512 64%);
     position: absolute;
   }
