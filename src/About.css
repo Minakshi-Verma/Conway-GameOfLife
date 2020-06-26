@@ -2,25 +2,30 @@
     display: flex;
     margin:2%;
     flex-direction: column;
-    text-align: left
+    text-align: left;
+    padding:2% 7% 2% 7%;
 }
 .about1{
     background-color: #16163f;
     color: rgb(247, 243, 232);
     padding:2%;
-    margin-bottom:2%;
+    margin-bottom:0.5%;
+    border-radius: 12px
 
 }
 
 .about2{
     background-color: #16163f;
     color: rgb(247, 243, 232);
-    padding:2%
+    padding:2%;
+    border-radius: 12px;
 
 }
 h2{
     border:1px #0a0a2e solid ;
-    color:#a8382f;
+    color:#9C1512;
+    background-color: white;
+    margin:2% -2% 2% -2%;
     text-align:center
 }
 
