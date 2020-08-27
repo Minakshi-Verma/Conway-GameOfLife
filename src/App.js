@@ -1,10 +1,10 @@
 import React from 'react';
-import Cellular from './Cellular'
+import Cellular from './components/Cellular'
 import {Route} from 'react-router-dom'
 import{BrowserRouter as Router} from 'react-router-dom';
-import About from './About'
-import Header from './Header'
-import Home from './Home'
+import About from './components/About'
+import Header from './components/Header'
+import Home from './components/Home'
 import './App.css';
 
 
