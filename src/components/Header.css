@@ -20,10 +20,10 @@
     border-radius: 6px;
   }
   .link:hover{
-      padding:5%;      
+     
       background-color:white ;
       color:#a8382f;
-      font-size: x-large;
+      /* font-size:20px; */
       
   }  
 
