@@ -1,10 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployed link:  https://conway-game-of-life-beta.vercel.app/<br /><br />
 
+## Tech stack: React|| JavaScript || CSS || Vercel
+
+### What is Conway's game of life:
+Conway's game of life is a cellular automaton developed by John H. Conway. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.
+For more, please visit: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+ <br /><br />
+
+### How does it work?
+In this game, a cell can have only two states: dead or alive. These cells follow a simple set of rules:
+1-Any live cell with two or three live neighbours survives.
+2-Any dead cell with three live neighbours becomes a live cell.
+3-All other live cells die in the next generation. Similarly, all other dead cells stay dead.<br /><br />
+
+## project details 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
+Create react app comes with all necessary dependancies that we will need in this project.
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,22 +30,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
+
+
+<!-- The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information. -->
 
-### `yarn eject`
+<!-- ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -65,4 +85,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->

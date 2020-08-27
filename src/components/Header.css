@@ -1,17 +1,19 @@
 .header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-evenly;
     background-color:#0a0a2e;
     align-items: center;    
     margin-bottom:2%; 
     padding:2.5%;  
 }
 
-  .link{     
+  .link{  
+    display: block;
+    width: 120px;   
     color:white;
     background-color:#a8382f;      
-    font-size: large;
+    font-size: x-large;
     font-style: oblique;
     margin-left:100px;
     border: 1px white solid;
@@ -22,9 +24,7 @@
   .link:hover{
      
       background-color:white ;
-      color:#a8382f;
-      /* font-size:20px; */
-      
+      color:#a8382f;      
   }  
 
   
