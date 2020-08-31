@@ -1,3 +1,7 @@
+# Conway-GameOfLife
+
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Maintainability](https://codeclimate.com/github/Minakshi-Verma/Conway-GameOfLife/maintainability"><img src="https://api.codeclimate.com/v1/badges/0167bef673058b01246d/maintainability) 
+
 ## Deployed link:  https://conway-game-of-life-beta.vercel.app/<br /><br />
 
 ## Tech stack: React|| JavaScript || CSS || Vercel <br />
