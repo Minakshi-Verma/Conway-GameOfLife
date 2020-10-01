@@ -1,6 +1,7 @@
 ## Deployed link:  https://conway-game-of-life-beta.vercel.app/<br /><br />
 
-## Tech stack: React|| JavaScript || CSS || Vercel <br />
+<img src="./img/Screenshot (14).png" alt="desktop" width="500">
+ <br/>
 
 ### What is Conway's game of life:
 Conway's game of life is a cellular automaton developed by John H. Conway. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.
@@ -12,6 +13,8 @@ In this game, a cell can have only two states: dead or alive. These cells follow
 1-Any live cell with two or three live neighbours survives.<br />
 2-Any dead cell with three live neighbours becomes a live cell.<br />
 3-All other live cells die in the next generation. Similarly, all other dead cells stay dead.<br /><br />
+
+## Tech stack: React|| JavaScript || CSS || Vercel <br />
 
 ## Project details 
 
