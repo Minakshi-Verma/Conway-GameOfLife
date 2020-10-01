@@ -1,3 +1,7 @@
+# Conway-GameOfLife
+
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![Maintainability](https://api.codeclimate.com/v1/badges/0167bef673058b01246d/maintainability) ![issues](https://img.shields.io/github/issues/Minakshi-Verma/Conway-GameOfLife) ![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fminakshi_12) 
+
 ## Deployed link:  https://conway-game-of-life-beta.vercel.app/<br /><br />
 
 <img src="./img/Screenshot (14).png" alt="desktop" width="500">
